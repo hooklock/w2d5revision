@@ -18,7 +18,6 @@ class Hotel
     empty = []
     @rooms.each { |room| empty << room.occupied == "Empty" }
     return empty.count
-  end
-  
+  end  
 
 end

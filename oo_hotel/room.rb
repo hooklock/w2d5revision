@@ -31,6 +31,14 @@ class Room
     return @max
   end
 
+  def room_occupied
+    #checks if the guest array contains data
+    #sets the room from "Empty" to "Occupied"
+    if @guest.count > 0
+      return @occupied = "Occupied"
+    end
+  end
+
 
 
 end

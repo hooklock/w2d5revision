@@ -55,4 +55,9 @@ class TestHotel < MiniTest::Test
   def test_room_max
     assert_equal(1, @room1.room_max)
   end
+
+  def test_room_state
+    @room2.check_in(@room2guests)
+    assert_equal("Occupied", @room2.room_occupied)
+  end
 end
